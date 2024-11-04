@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-WebProjectApplication<webProject>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.webProjectSB.webProject.WebProjectApplication",
+            "projectName": "webProject",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
