@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registration Success</title>
+</head>
+<body>
+    <h1>Registration Successful!</h1>
+    
+    <h2>User Details</h2>
+    
+    <p><strong>Name:</strong> <span th:text="${user.name}"></span></p>
+    <p><strong>Email:</strong> <span th:text="${user.email}"></span></p>
+
+    <div>
+        <strong>Profile Image:</strong><br>
+        <img th:src="@{${user.imagePath}}" alt="User Profile Image" style="max-width: 200px; max-height: 200px;">
+    </div>
+
+    <p>Thank you for registering, <span th:text="${user.name}"></span>!</p>
+
+    <a th:href="@{/}">Go to Home Page</a>
+</body>
+</html>
